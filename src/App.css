@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+.Container {
+    max-width: 124rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.Mainbox {
+    display: flex;
+    height: 60.1rem;
+    margin: 5rem 0;
+    box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* First Box Design  */
+
+.FirstBox {
+    background-color: #fff;
+    width: 32.9rem;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+}
+.Title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.8rem 2rem 0;
+    padding-bottom: 2.8rem;
+    /* border-bottom: 0.1rem solid #E5E5E5;  */
+}
+
+.Title-inner {
+    color: #2aacb5;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.Edit-form__first-box {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* List types  */
+
+.Alltasks {
+    max-width: 17.3rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 2rem 0;
+    border-bottom: 0.1rem solid #e5e5e5;
+    border-top: 0.1rem solid #e5e5e5;
+}
+
+.List-name {
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.List-name::before {
+    position: absolute;
+    content: "";
+    width: 0.3rem;
+    height: 1.4rem;
+    background-color: #2aacb5;
+    left: -0.7rem;
+}
+
+.Lists {
+    margin: 1rem 0;
+}
+
+.List {
+    color: #969a9a;
+    font-size: 1.2rem;
+    list-style: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.btn-list {
+    cursor: pointer;
+    float: right;
+    border: none;
+    background: none;
+    line-height: 1.7rem;
+}
+
+.Newlist {
+    font-size: 1.2rem;
+    color: #969a9a;
+}
+
+.Add-new-list {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.btn-newlist {
+    cursor: pointer;
+    float: right;
+    border: none;
+    background: none;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.copyright {
+    margin-top: 1.5rem;
+    padding: 0 1.3rem;
+    text-align: center;
+    color: #555555;
+    width: 100%;
+}
+
+.List__link {
+    text-decoration: none;
+    color: #969a9a;
+}
+
+.List__link:focus {
+    color: #000;
+    font-weight: 700;
+}
+/* Second Box Design  */
+
+.Titles {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #8a8888;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.SecondBox {
+    max-width: 82.5rem;
+    margin: 0 auto;
+    background-color: #e5e5e5;
+    width: 100%;
+    padding: 0 1.3rem;
+}
+
+.SecondBox-inner {
+    margin: 2.7rem 0 1.4rem;
+    color: #8a8888;
+    font-size: 1.5rem;
+}
+.SecondBox-inner p {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* Top Form */
+.Form {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    height: 13.9rem;
+    width: 100%;
+    background-color: #fff;
+}
+
+.form-inner {
+    padding: 2rem;
+}
+
+.text-input {
+    width: 30.9rem;
+    padding: 0.9rem 1rem 1.1rem;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+}
+
+.text-input::placeholder {
+    font-size: 1.3rem;
+}
+
+.text-label {
+    padding-right: 0.5rem;
+    color: #000000;
+}
+
+.date-input::-webkit-datetime-edit {
+    padding: 0.9rem 1rem 0.9rem;
+    width: 29.9rem;
+    appearance: none;
+}
+.btn-form {
+    display: block;
+    background: #2bb84a;
+    border: 1px solid #2bb84a;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 0.9rem 2.1rem;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 2rem 0 0 3.8rem;
+}
+
+.btn-form:hover {
+    background: rgb(19, 212, 61);
+    transition: ease all 0.5s;
+}
+
+.Task {
+    padding: 1rem;
+    margin: 1rem 0;
+    list-style: none;
+    background: #ffffff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    font-size: 1.3rem;
+}
+
+.btn-task {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    padding-right: 1rem;
+}
+
+/* Edit form task */
+
+.Edit-form {
+    display: inline;
+}
+
+.test {
+    display: inline;
+}
+
+.Task-todo__box {
+    overflow: scroll;
+    height: 36rem;
+    margin-top: 2rem;
+}
+
+.Date-input__list {
+    float: right;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 18px;
+    color: #f58a8a;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.visible {
+    display: block;
+}
+
+.not-visible {
+    display: none;
+}
