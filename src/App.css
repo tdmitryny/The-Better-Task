@@ -270,3 +270,35 @@ body {
 .not-visible {
     display: none;
 }
+
+
+/* .Edit-form__first-box{
+    display: flex;
+    
+} */
+
+.Alert{
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    border: .1rem red solid;
+    padding: .7rem;
+    background-color: rgba(255, 0, 0, 0.24);
+    margin-bottom: 1rem;
+    
+}
+
+
+.Btn-task__right{
+    border: none;
+    background-color: #2bb84a;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 .7rem;
+    border-radius: .3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.Input__task::placeholder{
+    font-size: 1.2rem;
+}

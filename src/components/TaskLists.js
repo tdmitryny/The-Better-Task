@@ -16,12 +16,16 @@ export function TaskLists() {
         {
             id: generateId(),
             text: "Work task",
+
         },
     ]);
+
+
 
     const [inputTodoText, setInputTodoText] = useState("");
     const [showTask, setShowTask] = useState(false);
     // const [activeTag, setActiveTag] = useState(null);
+    const [showAlert, setShowAlert] = useState(null)
 
     const { state, setState } = useContext(showSecondBox);
 
@@ -34,6 +38,9 @@ export function TaskLists() {
         const random = Math.floor(Math.random() * 10);
     };
 
+
+
+
     const onSubmit = (e) => {
         e.preventDefault();
         if (inputTodoText.length > 0) {
@@ -44,8 +51,12 @@ export function TaskLists() {
 
             addNewTask(updated);
             setInputTodoText("");
+            setShowAlert("")
         } else {
-            alert("Please add task");
+            //alert("Please add task");
+            // setShowAlert('Please type the name!')
+            setShowAlert(<p className="Alert">Please, type task name!</p>)
+
         }
     };
 
@@ -96,8 +107,11 @@ export function TaskLists() {
                         </div>
                         {showTask && (
                             <form onSubmit={onSubmit}>
+                                {showAlert}
                                 <div className="Edit-form__first-box">
+
                                     <input
+                                        className="Input__task"
                                         value={inputTodoText}
                                         onChange={(e) =>
                                             setInputTodoText(e.target.value)
@@ -105,7 +119,7 @@ export function TaskLists() {
                                         type={"text"}
                                         placeholder="Type your task"
                                     />
-                                    <input type="submit" value="Ok" />
+                                    <input className="Btn-task__right" type="submit" value="ok" />
                                 </div>
                             </form>
                         )}

@@ -52,6 +52,7 @@ export function Form(props) {
                     name="date"
                     min="01-01-2022"
                     max="01-01-2030"
+                    required
 
 
                 />
