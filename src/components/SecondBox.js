@@ -14,7 +14,21 @@ export function SecondBox({ addSecondBox }) {
     const [task, setTask] = useState([
         {
             id: generateId(),
-            text: "Upload on server",
+            text: "Strawberries",
+            status: "todo", //todo, complete, uncomplete
+            tag: 1,
+            //date: date,
+        },
+        {
+            id: generateId(),
+            text: "Apples",
+            status: "todo", //todo, complete, uncomplete
+            tag: 1,
+            //date: date,
+        },
+        {
+            id: generateId(),
+            text: "Potatos 1lb.",
             status: "todo", //todo, complete, uncomplete
             tag: 1,
             //date: date,
@@ -28,8 +42,7 @@ export function SecondBox({ addSecondBox }) {
         text: "",
     });
 
-    // const [activeTag, setActiveTag] = useState(1);
-    // const list = [1, 2, 3];
+    const [alert, setAlert] = useState('sfdsf');
 
     //Task create
     const addTask = (newText) => {
@@ -115,75 +128,65 @@ export function SecondBox({ addSecondBox }) {
                 <h2 className="Titles">Create new task</h2>
             </div>
             <Form onAdd={addTask} onHide={hideText} />
-            {/* <button
-                onClick={() => {
-                    setActiveTag(1);
-                    console.log(task);
-                }}
-            >
-                1
-            </button>
-            <button onClick={() => setActiveTag(2)}>2</button>
-            <button onClick={() => setActiveTag(3)}>3</button> */}
-            {
-                <div className="Task-todo__box">
-                    <h2 className="Titles">to-do</h2>
-                    <ul className="Task-box">
-                        {task.length > 0
-                            ? task.map(
-                                  (list) =>
-                                      list.status === "todo" &&
-                                      list.tag === activeTagLeft && (
-                                          <Task
-                                              key={list.id}
-                                              onChangeStatus={
-                                                  changeStatusToComplete
-                                              }
-                                              onRemoveTask={removeTask}
-                                              onShowInput={showInput}
-                                              onInputEdit={inputEdit}
-                                              list={list}
-                                              showID={showID}
-                                          />
-                                      )
-                              )
-                            : "No task to show"}
-                    </ul>
 
-                    <h2 className="Titles">complete</h2>
-                    <ul className="Task-box">
-                        {task.length > 0
-                            ? task.map(
-                                  (list) =>
-                                      list.status === "complete" &&
-                                      list.tag === activeTagLeft && (
-                                          <CompleteTask
-                                              key={list.id}
-                                              list={list}
-                                              onRemoveTask={removeTask}
-                                          />
-                                      )
-                              )
-                            : "No task to show"}
-                    </ul>
-                    <h2 className="Titles">incomplete</h2>
-                    <ul className="Task-box">
-                        {task.length > 0
-                            ? task.map(
-                                  (list) =>
-                                      list.status === "incomplete" &&
-                                      list.tag === activeTagLeft && (
-                                          <IncompleteTask
-                                              key={list.id}
-                                              list={list}
-                                              onRemoveTask={removeTask}
-                                          />
-                                      )
-                              )
-                            : "No task to show"}
-                    </ul>
-                </div>
-            }
+            <div className="Task-todo__box">
+                <h2 className="Titles">to-do</h2>
+                <ul className="Task-box">
+                    {task.length > 0
+                        ? task.map(
+                            (list) =>
+                                list.status === "todo" &&
+                                list.tag === activeTagLeft && (
+                                    <Task
+                                        key={list.id}
+                                        onChangeStatus={
+                                            changeStatusToComplete
+                                        }
+                                        onRemoveTask={removeTask}
+                                        onShowInput={showInput}
+                                        onInputEdit={inputEdit}
+                                        list={list}
+                                        showID={showID}
+                                    />
+                                )
+                        )
+                        : <p className="Confirm">No task to show, please create new task!</p>}
+                </ul>
+
+                <h2 className="Titles">complete</h2>
+                <ul className="Task-box">
+                    {task.length > 0
+                        && task.map(
+                            (list) =>
+                                list.status === "complete" &&
+                                list.tag === activeTagLeft && (
+                                    <CompleteTask
+                                        key={list.id}
+                                        list={list}
+                                        onRemoveTask={removeTask}
+                                    />
+                                )
+                        )
+                    }
+                </ul>
+                <h2 className="Titles">incomplete</h2>
+                <ul className="Task-box">
+                    {task.length > 0
+                        && task.map(
+                            (list) =>
+                                list.status === "incomplete" &&
+                                list.tag === activeTagLeft && (
+                                    <IncompleteTask
+                                        key={list.id}
+                                        list={list}
+                                        onRemoveTask={removeTask}
+                                    />
+                                )
+                        )
+                    }
+                </ul>
+            </div>
+
         </div>
     );
 }

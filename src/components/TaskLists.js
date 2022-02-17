@@ -15,9 +15,11 @@ export function TaskLists() {
     const [todo, setTodo] = useState([
         {
             id: generateId(),
-            text: "Work task",
+            text: "Shopping list",
 
         },
+
+
     ]);
 
 
