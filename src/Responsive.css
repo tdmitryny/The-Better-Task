@@ -1,0 +1,32 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 895px (Smaller desktops) */
+/**************************/
+
+@media(max-width:56em){
+    .form-inner{
+        flex-direction: column;
+        display: flex;
+    }
+
+    .btn-form{
+        margin: 2rem 0 0 0rem;
+    }
+
+    .text-label{
+        margin-top: 1rem;
+    }
+    .text-input{
+        width:100%;
+        margin-right: 0;
+    }
+
+    .date-input::-webkit-datetime-edit{
+        width: 2rem;
+    }
+    
+    .Title-inner{
+        font-size: 1.6rem;
+    }
+}
