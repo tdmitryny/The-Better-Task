@@ -24,7 +24,7 @@ body {
     display: flex;
     height: 60.1rem;
     margin: 5rem 0;
-    box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
     overflow: hidden;
 }
@@ -324,6 +324,11 @@ body {
     font-size: 1.2rem;
 }
 
+.Input__task{
+width: 12rem;
+}
+
 .Input__task::placeholder{
     font-size: 1.2rem;
+    
 }
