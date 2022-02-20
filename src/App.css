@@ -35,7 +35,19 @@ body {
     background-color: #fff;
     width: 32.9rem;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+    
 }
+.Btn-first-box{
+    display: none;
+}
+
+.First-main-box{
+    background-color: black;
+    display: none;
+}
+
+
+
 .Title-box {
     display: flex;
     justify-content: center;
