@@ -48,7 +48,7 @@
 
    .FirstBox{
        position: relative;
-       transition: ease 1s;
+       
        
    }
 
@@ -118,7 +118,7 @@
 
 
    .FirstBox-hide{
-   transition: all .5s ;
+   
    transform: translateX(-100%);
    position: absolute;
    height: 100%;
@@ -127,3 +127,19 @@
 
 }
 
+
+/**************************/
+/* BELOW 551px (iPad) */
+/**************************/
+@media(max-width:34em){
+
+    .Mainbox{
+        position: relative;
+    }
+    .FirstBox{
+        position: absolute;
+        top:0rem;
+        right: 2rem;
+        min-height: 100%;
+    }
+}
