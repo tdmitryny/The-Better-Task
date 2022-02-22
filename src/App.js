@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="Container">
       <div className="Mainbox">
-        <FirstBox className="First-main-box" />
+        <FirstBox />
         {
           state && (
             <SecondBox />
