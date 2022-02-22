@@ -1,6 +1,6 @@
 import FirstBox from './components/FirstBox';
 import SecondBox from './components/SecondBox';
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import './App.css';
 import './Responsive.css';
 import showSecondBox from './components/Context'
@@ -8,6 +8,7 @@ import showSecondBox from './components/Context'
 function App() {
 
   const { state, setState } = useContext(showSecondBox);
+
 
 
   return (
