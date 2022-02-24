@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/The-Better-Task/static/css/main.cb7bcb16.css",
-    "main.js": "/The-Better-Task/static/js/main.d442cfd3.js",
+    "main.js": "/The-Better-Task/static/js/main.e084b4de.js",
     "index.html": "/The-Better-Task/index.html",
     "static/media/crossAdd.svg": "/The-Better-Task/static/media/crossAdd.d1de3e2b35aa7ef840128b853e2f461e.svg",
     "static/media/Arrow-right.svg": "/The-Better-Task/static/media/Arrow-right.abf541e2306765b0bc56.svg",
     "static/media/Arrow-left.svg": "/The-Better-Task/static/media/Arrow-left.f4b7b6be3b0fb7652873.svg",
     "main.cb7bcb16.css.map": "/The-Better-Task/static/css/main.cb7bcb16.css.map",
-    "main.d442cfd3.js.map": "/The-Better-Task/static/js/main.d442cfd3.js.map"
+    "main.e084b4de.js.map": "/The-Better-Task/static/js/main.e084b4de.js.map"
   },
   "entrypoints": [
     "static/css/main.cb7bcb16.css",
-    "static/js/main.d442cfd3.js"
+    "static/js/main.e084b4de.js"
   ]
 }
